@@ -559,15 +559,6 @@ const renderMovie = async (movie) => {
     right.scrollBy(1380, 0);
   });
 };
-document.getElementById("searchbtn").addEventListener("click", async (e) => {
-  e.preventDefault
-  const searchInputValue = e.target.searchbtn.value
-  if (searchInputValue) {
-    const movies = await searchMovies(searchInputValue)
-    renderMovies(movies.results)
-  }
-
-})
 
 document.addEventListener("DOMContentLoaded", () => {
   autorun();
